@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>GBControl</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="manifest"
+        href="manifest.json"
+    >
+
+    <meta
+        name="theme-color"
+        content="#111827"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================
+     LOGIN
+========================== -->
+
+
+<div id="login">
+
+
+    <h1>
+        🎮 GBControl
+    </h1>
+
+
+    <h3>
+        Acceso administrador
+    </h3>
+
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Contraseña"
+        onkeydown="if(event.key==='Enter') login();"
+    >
+
+
+    <br><br>
+
+
+    <button onclick="login()">
+
+        Entrar
+
+    </button>
+
+
+    <p id="error"></p>
+
+
+</div>
+
+
+
+
+
+
+<!-- ==========================
+     PANEL
+========================== -->
+
+
+<div
+    id="panel"
+    style="display:none"
+>
+
+
+<header>
+
+
+    <h1>
+        🎮 GBControl
+    </h1>
+
+
+    <p>
+        Panel de control Gaming Center
+    </p>
+
+
+    <div id="reloj">
+
+        <p id="fecha"></p>
+
+        <h2 id="hora"></h2>
+
+    </div>
+
+
+
+
+    <div id="dashboard">
+
+
+        <div class="dashboard-card">
+
+            <span
+            class="numero"
+            id="pcsLibres">
+
+                0
+
+            </span>
+
+            <span class="texto">
+
+                PCs Libres
+
+            </span>
+
+        </div>
+
+
+
+        <div class="dashboard-card">
+
+            <span
+            class="numero"
+            id="pcsUso">
+
+                0
+
+            </span>
+
+            <span class="texto">
+
+                En Uso
+
+            </span>
+
+        </div>
+
+
+
+        <div class="dashboard-card">
+
+            <span
+            class="numero"
+            id="pcsApagadas">
+
+                12
+
+            </span>
+
+            <span class="texto">
+
+                Apagadas
+
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <div id="estadoConexion">
+
+        <h3>🖥 Estado de los equipos</h3>
+
+        <div id="listaConexion"></div>
+
+    </div>
+
+
+</header>
+
+
+
+
+
+
+<main id="ordenadores">
+
+</main>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- ==========================
+     JAVASCRIPT
+========================== -->
+
+
+<script src="/socket.io/socket.io.js"></script>
+
+<script src="app.js"></script>
+
+<script src="reloj.js"></script>
+
+<script src="dashboard.js"></script>
+
+<script src="pcs.js"></script>
+
+<script src="tiempo.js"></script>
+
+<script src="socket.js"></script>
+
+
+
+<script>
+
+if ("serviceWorker" in navigator) {
+
+    navigator.serviceWorker.register("service-worker.js");
+
+}
+
+</script>
+
+
+
+</body>
+
+</html>
