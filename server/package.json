@@ -1,13 +1,14 @@
 {
-  "name": "gbcontrol-agent",
+  "name": "gbcontrol-server",
   "version": "1.0.0",
-  "description": "Agente de GBControl",
-  "bin": "agent.js",
-  "type": "commonjs",
+  "description": "Servidor de GBControl",
+  "main": "server.js",
   "scripts": {
-    "start": "node agent.js"
+    "start": "node server.js"
   },
   "dependencies": {
-    "socket.io-client": "^4.8.3"
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
   }
 }
