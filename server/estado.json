@@ -1,0 +1,50 @@
+{
+  "1": {
+    "encendido": false,
+    "finSesion": null
+  },
+  "2": {
+    "encendido": false,
+    "finSesion": null
+  },
+  "3": {
+    "encendido": false,
+    "finSesion": null
+  },
+  "4": {
+    "encendido": false,
+    "finSesion": null
+  },
+  "5": {
+    "encendido": false,
+    "finSesion": null
+  },
+  "6": {
+    "encendido": false,
+    "finSesion": null
+  },
+  "7": {
+    "encendido": true,
+    "finSesion": null
+  },
+  "8": {
+    "encendido": true,
+    "finSesion": null
+  },
+  "9": {
+    "encendido": false,
+    "finSesion": null
+  },
+  "10": {
+    "encendido": false,
+    "finSesion": null
+  },
+  "11": {
+    "encendido": false,
+    "finSesion": null
+  },
+  "12": {
+    "encendido": false,
+    "finSesion": null
+  }
+}

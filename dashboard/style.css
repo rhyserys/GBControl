@@ -1,0 +1,691 @@
+/* ==========================
+   GBControl v2
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:#111827;
+    color:white;
+
+}
+
+
+/* ==========================
+   LOGIN
+========================== */
+
+
+#login{
+
+    text-align:center;
+    margin-top:120px;
+
+}
+
+
+#login h1{
+
+    font-size:52px;
+    margin-bottom:15px;
+
+}
+
+
+#login h3{
+
+    color:#94a3b8;
+    margin-bottom:30px;
+
+}
+
+
+input{
+
+    width:280px;
+    padding:12px;
+
+    font-size:18px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:10px;
+
+}
+
+
+
+/* ==========================
+   BOTONES GENERALES
+========================== */
+
+
+button{
+
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.25s;
+    font-weight:bold;
+
+}
+
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+/* ==========================
+   CABECERA
+========================== */
+
+
+header{
+
+    background:#1f2937;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+
+}
+
+
+header h1{
+
+    font-size:42px;
+
+}
+
+
+header p{
+
+    margin-top:8px;
+    color:#cbd5e1;
+
+}
+
+
+
+
+
+/* ==========================
+   RELOJ
+========================== */
+
+
+#reloj{
+
+    display:inline-block;
+    margin-top:25px;
+    padding:18px 35px;
+    background:#0f172a;
+    border-radius:15px;
+    border:1px solid #334155;
+
+}
+
+
+#fecha{
+
+    color:#94a3b8;
+    font-size:16px;
+    letter-spacing:2px;
+
+}
+
+
+#hora{
+
+    margin-top:8px;
+    font-size:42px;
+    letter-spacing:4px;
+
+}
+
+
+
+
+
+/* ==========================
+   DASHBOARD
+========================== */
+
+
+#dashboard{
+
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+
+
+.dashboard-card{
+
+    width:180px;
+    background:#0f172a;
+    border:1px solid #334155;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+
+}
+
+
+.dashboard-card .numero{
+
+    display:block;
+    font-size:36px;
+    font-weight:bold;
+    color:#60a5fa;
+
+}
+
+
+.dashboard-card .texto{
+
+    display:block;
+    margin-top:10px;
+    color:#cbd5e1;
+
+}
+
+
+
+
+
+/* ==========================
+   PANEL PCS
+========================== */
+
+
+main{
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:35px;
+
+}
+
+
+
+
+
+/* ==========================
+   TARJETAS PC
+========================== */
+
+
+.pc-card{
+
+    width:390px;
+    background:#1f2937;
+    border-radius:22px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+    transition:.25s;
+
+}
+
+
+.pc-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+
+
+/* ==========================
+   ESTADOS
+========================== */
+
+
+.offline{
+
+    color:#ef4444;
+    font-size:20px;
+    font-weight:bold;
+
+}
+
+
+.libre{
+
+    color:#22c55e;
+    font-size:20px;
+    font-weight:bold;
+
+}
+
+
+.usando{
+
+    color:#facc15;
+    font-size:20px;
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* ==========================
+   INFORMACION
+========================== */
+
+
+#ordenadores p{
+
+    margin:12px 0;
+
+}
+/* ==========================
+   BOTONES PCS
+========================== */
+
+
+.grupo-botones{
+
+    margin-top:20px;
+
+}
+
+
+
+/* ==========================
+   ENCENDER / APAGAR
+========================== */
+
+
+.grupo-botones:first-of-type{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+
+.grupo-botones:first-of-type button{
+
+    width:150px;
+
+    height:55px;
+
+    font-size:16px;
+
+    border-radius:14px;
+
+}
+
+
+
+/* ENCENDER */
+
+
+.grupo-botones:first-of-type button:first-child{
+
+    background:#22c55e;
+
+}
+
+
+.grupo-botones:first-of-type button:first-child:hover{
+
+    background:#16a34a;
+
+}
+
+
+
+
+
+/* APAGAR */
+
+
+.grupo-botones:first-of-type button:nth-child(2){
+
+    background:#ef4444;
+
+}
+
+
+.grupo-botones:first-of-type button:nth-child(2):hover{
+
+    background:#dc2626;
+
+}
+
+
+
+
+
+/* ==========================
+   BOTONES TIEMPOS
+========================== */
+
+
+.grupo-botones:not(:first-of-type){
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:12px;
+
+}
+
+
+
+.grupo-botones:not(:first-of-type) button{
+
+    width:100%;
+
+    height:48px;
+
+    font-size:15px;
+
+    border-radius:12px;
+
+}
+
+
+
+
+
+/* ==========================
+   CERRAR SESION CENTRADO
+========================== */
+
+
+.pc-card > button:last-child{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:30px auto 0;
+
+    width:260px;
+
+    height:55px;
+
+    background:#475569;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+}
+
+
+
+.pc-card > button:last-child:hover{
+
+    background:#334155;
+
+}
+
+
+
+
+
+/* ==========================
+   BOTON ENTRAR LOGIN
+========================== */
+
+
+#login button{
+
+    width:220px;
+
+    height:55px;
+
+    margin-top:20px;
+
+    font-size:20px;
+
+    border-radius:14px;
+
+    background:#2563eb;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.35);
+
+}
+
+
+
+#login button:hover{
+
+    background:#1d4ed8;
+
+    transform:scale(1.05);
+
+}
+
+
+
+
+
+/* ==========================
+   SEPARADOR
+========================== */
+
+
+hr{
+
+    border:none;
+
+    border-top:1px solid #374151;
+
+    margin:18px 0;
+
+}
+
+
+
+
+
+/* ==========================
+   ERROR LOGIN
+========================== */
+
+
+#error{
+
+    margin-top:20px;
+
+    color:#ef4444;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+
+@media(max-width:768px){
+
+
+    .pc-card{
+
+        width:95%;
+
+    }
+
+
+    .grupo-botones:not(:first-of-type){
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
+
+
+/* ==========================
+   CERRAR SESION CENTRADO
+========================== */
+
+
+.pc-card > button:last-child{
+
+    display:block;
+
+    margin:30px auto 0;
+
+    width:260px;
+
+    height:55px;
+
+    background:#475569;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    text-align:center;
+
+}
+
+
+
+.pc-card > button:last-child:hover{
+
+    background:#334155;
+
+}
+
+/* ==========================
+   ESTADO CONEXIÓN
+========================== */
+
+#estadoConexion{
+
+    margin-top:30px;
+    background:#0f172a;
+    border:1px solid #334155;
+    border-radius:16px;
+    padding:18px;
+
+}
+
+#estadoConexion h3{
+
+    margin-bottom:15px;
+    color:#e5e7eb;
+    font-size:20px;
+
+}
+
+#listaConexion{
+
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:12px;
+
+}
+
+.pc-online{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+
+    background:#1f2937;
+    border-radius:10px;
+    padding:10px;
+
+    font-weight:bold;
+
+}
+
+.bolita{
+
+    width:12px;
+    height:12px;
+    border-radius:50%;
+
+    background:#ef4444;
+
+    transition:.25s;
+
+}
+
+.bolita.online{
+
+    background:#22c55e;
+
+    box-shadow:0 0 10px #22c55e;
+
+}
+
+.sesion{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+
+}
+
+
+.sesion button{
+
+    width:150px;
+    height:55px;
+
+}
+
+
+.sesion button:first-child{
+
+    background:#22c55e;
+
+}
+
+
+.sesion button:last-child{
+
+    background:#475569;
+
+}

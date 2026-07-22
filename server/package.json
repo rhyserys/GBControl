@@ -1,0 +1,13 @@
+{
+  "name": "gbcontrol-agent",
+  "version": "1.0.0",
+  "description": "Agente de GBControl",
+  "bin": "agent.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node agent.js"
+  },
+  "dependencies": {
+    "socket.io-client": "^4.8.3"
+  }
+}
